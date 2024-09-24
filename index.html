@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Modern Library</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Início</a></li>
+                <li><a href="#" id="cart-icon">Carrinho <span>0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="book-list">
+        <h2>Sugestões de Livros</h2>
+        <div class="books-grid">
+            <div class="book-item">
+                <img src="imgs/book1.png" alt="It A Coisa">
+                <h3>It A Coisa</h3>
+                <p>Autor: Stephen King</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="book-item">
+                <img src="imgs/book2.png" alt="Arsène Lupin">
+                <h3>Arsène Lupin O Ladrão de Casaca</h3>
+                <p>Autor: Maurice LeBlanc</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="book-item">
+                <img src="imgs/book3.png" alt="As Aventuras de Robinson Crusoé">
+                <h3>As Aventuras de Robinson Crusoé</h3>
+                <p>Autor: Daniel Defoe</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="book-item">
+                <img src="imgs/book4.png" alt="O Capital">
+                <h3>O Capital</h3>
+                <p>Autor: Karl Marx</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="book-item">
+                <img src="imgs/book5.png" alt="O Príncipe">
+                <h3>O Príncipe</h3>
+                <p>Autor: Nicolau Maquiavel</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="book-item">
+                <img src="imgs/book6.png" alt="Clean Code">
+                <h3>Clean Code</h3>
+                <p>Autor: Robert C. Martin</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="book-item">
+                <img src="imgs/book7.png" alt="Diário de um Banana Cabeça-oca">
+                <h3>Diário de um Banana Cabeça-oca</h3>
+                <p>Autor: Jeff Kinney</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="book-item">
+                <img src="imgs/book8.png" alt="Nada Pode me Ferir">
+                <h3>Nada Pode me Ferir</h3>
+                <p>Autor: David Goggins</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="book-item">
+                <img src="imgs/book9.png" alt="A Sútil Arte de Ligar o F*da-se">
+                <h3>A Sútil Arte de Ligar o F*da-se</h3>
+                <p>Autor: Mark Manson</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart-page" style="display: none;">
+        <h2>Seu Carrinho</h2>
+        <form id="purchase-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="payment">Método de Pagamento:</label>
+            <select id="payment" name="payment">
+                <option value="credit">Cartão de Crédito</option>
+                <option value="debit">Cartão de Débito</option>
+                <option value="pix">PIX</option>
+            </select>
+
+            <button type="submit">Finalizar Compra</button>
+        </form>
+        <div id="success-message" style="display: none;">
+            <p>Compra realizada com sucesso!</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
